@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arlecchino</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="raibowrose-slider.css">
+    <script src="rainbowrose-slider.js"></script>
 </head>
 
 <body>
@@ -99,6 +101,34 @@
                             </ul>
                         </td>
                 </table>
+
+                <!-- Add this inside the materials-calc section, after the existing table -->
+                <div class="level-slider-container">
+                    <h4>Calculate Rainbow Rose Requirements</h4>
+                    <div class="slider-wrapper">
+                        <label for="level-slider">Character Level Range:</label>
+                        <div class="slider-display">
+                            <span id="current-level">1</span>
+                            <span class="arrow">→</span>
+                            <span id="target-level">20</span>
+                        </div>
+                        <input type="range" id="level-slider" min="1" max="90" value="20" step="1">
+                        <div class="level-markers">
+                            <span>1</span>
+                            <span>20</span>
+                            <span>40</span>
+                            <span>50</span>
+                            <span>60</span>
+                            <span>70</span>
+                            <span>80</span>
+                        </div>
+                    </div>
+                    <div class="material-result">
+                        <img src="../images/rainbow_rose.png" alt="Rainbow Rose" class="material-icon">
+                        <span class="material-count" id="rose-count">3</span>
+                        <span class="material-name">Rainbow Roses needed</span>
+                    </div>
+                </div>
         </section>
     </main>
     

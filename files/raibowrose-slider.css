@@ -1,0 +1,120 @@
+.level-slider-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.level-slider-container h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.slider-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.slider-wrapper label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.slider-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9500;
+}
+
+.slider-display .arrow {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#level-slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4a4a4a 0%, #ff9500 100%);
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#level-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 149, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+#level-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 149, 0, 0.8);
+}
+
+#level-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9500;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 149, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+#level-slider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 149, 0, 0.8);
+}
+
+.level-markers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.material-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: rgba(255, 149, 0, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 149, 0, 0.3);
+}
+
+.material-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.material-count {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff9500;
+    min-width: 60px;
+    text-align: center;
+}
+
+.material-name {
+    color: #ddd;
+    font-size: 1rem;
+}
