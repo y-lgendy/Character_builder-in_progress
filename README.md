@@ -4,3 +4,4 @@ Applying Odin's learning journey through a simple character builder (genshin imp
 Tools used so far:
 - HTML
 - CSS
+- JS
