@@ -16,11 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function calculateRoses(level) {
         let total = 0;
-        const levels = [20, 40, 50, 60, 70, 80];
+        const levels = [
+            { value: 20, label: "20"},
+            { value: 40, label: "40"},
+            { value: 50, label: "50"},
+            { value: 60, label: "60"},
+            { value: 70, label: "70"},
+            { value: 80, label: "80"}
+        ];
         
         for (let ascLevel of levels) {
-            if (level >= ascLevel) {
-                total += ascensionData[ascLevel];
+            if (level >= ascLevel.value) {
+                total += ascensionData[ascLevel.value];
             } else {
                 break;
             }
