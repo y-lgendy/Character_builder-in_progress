@@ -104,7 +104,7 @@
 
                 <!-- Add this inside the materials-calc section, after the existing table -->
                 <div class="level-slider-container">
-                    <h4>Calculate Rainbow Rose Requirements</h4>
+                    <h4>Calculate Ascension Requirements</h4>
                     <div class="slider-wrapper">
                         <label for="level-slider">Character Level Range:</label>
                         <div class="slider-display">
@@ -113,8 +113,16 @@
                             <span id="target-level">20</span>
                         </div>
                         <input type="range" id="level-slider" min="20" max="80" value="20" step="1" list="level-markers">
+                        <datalist id="level-markers">
+                            <option value="20"></option>
+                            <option value="40"></option>
+                            <option value="50"></option>
+                            <option value="60"></option>
+                            <option value="70"></option>
+                            <option value="80"></option>
+                        </datalist>
+
                         <div class="level-markers">
-                            <span>1</span>
                             <span>20</span>
                             <span>40</span>
                             <span>50</span>

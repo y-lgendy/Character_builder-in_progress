@@ -43,7 +43,7 @@
     width: 100%;
     height: 8px;
     border-radius: 5px;
-    background: linear-gradient(to right, #4a4a4a 0%, #ff9500 100%);
+    background: #4a4a4a; /* Change from gradient to flat gray*/
     outline: none;
     -webkit-appearance: none;
     appearance: none;
@@ -56,6 +56,7 @@
     height: 20px;
     border-radius: 50%;
     background: #ff9500;
+    margin-top: -1rem;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 149, 0, 0.5);
     transition: all 0.3s ease;
@@ -83,12 +84,28 @@
 }
 
 .level-markers {
-    display: flex;
-    justify-content: space-between;
+    position: relative; /* Acts as a container for absolute "child"ren */
+    width: 100%;
+    height: 20px;
     margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: #aaa;
+    pointer-events: none;
 }
+
+.level-markers span {
+    position: absolute;
+    transform: translateX(-50%); /* Centers the text exactly on the point */
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+/* Manually place each label at the correct percentage of the bar */
+/* Formula: (Level - Min) / (Max - Min) * 100 */
+.level-markers span:nth-child(1) { left: 0%; }    /* Level 20 */
+.level-markers span:nth-child(2) { left: 33.3%; } /* Level 40 */
+.level-markers span:nth-child(3) { left: 50%; }   /* Level 50 */
+.level-markers span:nth-child(4) { left: 66.6%; } /* Level 60 */
+.level-markers span:nth-child(5) { left: 83.3%; } /* Level 70 */
+.level-markers span:nth-child(6) { left: 100%; }  /* Level 80 */
 
 .material-result {
     display: flex;
